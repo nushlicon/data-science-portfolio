@@ -1,0 +1,18 @@
+
+# Python virtual environment
+.venv/  #Excludes your Python virtual environment
+venv/  #Excludes other commonly named virtual environments
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# VS Code local settings
+.vscode/
