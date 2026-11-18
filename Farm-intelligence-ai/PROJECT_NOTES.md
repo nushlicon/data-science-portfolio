@@ -106,3 +106,7 @@ Future improvements may include livestock health records, crop management data, 
 ## 10. References
 
 USDA National Agricultural Statistics Service. Quick Stats Database. https://quickstats.nass.usda.gov/
+
+Lesson: Handling missing values
+
+The USDA corn production dataset contained 54 rows and 21 columns. Running df_corn.dropna() returned an empty DataFrame because every row had at least one missing value in a nonessential field. The original DataFrame remained unchanged. Instead of removing all incomplete rows, I selected five relevant columns for further analysis.
