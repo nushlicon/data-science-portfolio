@@ -110,36 +110,3 @@ USDA National Agricultural Statistics Service. Quick Stats Database. https://qui
 Lesson: Handling missing values
 
 The USDA corn production dataset contained 54 rows and 21 columns. Running df_corn.dropna() returned an empty DataFrame because every row had at least one missing value in a nonessential field. The original DataFrame remained unchanged. Instead of removing all incomplete rows, I selected five relevant columns for further analysis.
-
-
-
-##  USDA Corn Production Analysis Findings
-
-**Dataset:** USDA NASS Quick Stats, Washington State Corn Grain Production, 2015–2025.
-
-### Data Preparation
-- Imported 54 USDA records containing annual production observations and forecasts.
-- Filtered the dataset to 11 annual observations using `Period == "YEAR"`.
-- Selected five relevant columns: Year, Period, State, Data Item, and Value.
-- Converted production values from strings to integers.
-- Validated 11 unique years with no missing production values.
-- Sorted the dataset chronologically.
-
-### Descriptive Statistics
-- Cumulative production across 11 years: 224,128,000 bushels.
-- Average annual production: 20,375,273 bushels.
-- Highest production: 31,375,000 bushels in 2025.
-- Lowest production: 16,125,000 bushels in 2015.
-
-### Year-over-Year Findings
-- Largest annual increase: 34.47% in 2024.
-- Largest annual decrease: 16.51% in 2022.
-- Production increased by 29.62% in 2025 compared with 2024.
-
-### Interpretation
-Washington State corn grain production fluctuated during the study period, followed by substantial increases in 2024 and 2025.
-
-These observations describe production trends but do not establish the underlying causes. Further analysis of harvested acreage, crop yields, weather, and agricultural conditions would be needed.
-
-### Skills Practiced
-Python, Pandas, data inspection, missing-value analysis, Boolean filtering, numeric conversion, descriptive statistics, chronological sorting, percentage-change calculations, and Matplotlib visualization.
